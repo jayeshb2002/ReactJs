@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <!-- email, pref vehicle, pref package, tour-date, tour-time -->
+    <h1>Registration</h1>
+    <datalist id="places">
+        <option>Airport</option>
+        <option>Navalur</option>
+        <option>Egattur</option>
+        <option>Padur</option>
+    </datalist>
+    <form action="index.html" method="post">
+        <div><label for="firstName"></label>First Name<input type="text" name="firstName" id="firstName" placeholder=""></div>
+        <div><label for="lastName"></label>Last Name<input type="text" name="lastName" id="lastName" placeholder=""></div>
+        <div><label for="email"></label>Email<input type="email" name="email" id="email" placeholder=""></div>
+        <div><label for="prefVehicle">Pref Vehicle</label><input type="text" name="prefVehicle" id="prefVehicle"></div>
+        <div><label for="prefPackage">Pref Package</label><input type="text" name="prefPackage" id="prefPackage"></div>
+        <div><label for="tourDate"></label><input type="date" name="tourDate" id="tourDate"></div>
+        <div><label for="tourTime"></label><input type="time" name="tourTime" id="tourTime"></div> 
+        <div><label for="pickupLocation">Pick Up Location</label><input type="text" list="places" name="pickupLocation" id="pickupLocation"></div>
+        <div><label for="dropLocation">Drop Location</label><input type="text" list="places" name="dropLocation" id="dropLocation"></div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+Javascript
+
+IIFE used for the scoping
+
+var is not block scoped
+let is block scoped
+
+= is assignment operator
+== checks for value
+=== checks for value and type also
+
+default parameters after es6
+
+self executing anonymous functions
+
+arrow functions
+
+events in js
+
+Arrays in js
+

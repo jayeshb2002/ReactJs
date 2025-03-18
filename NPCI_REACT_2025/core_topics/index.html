@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jayesh">
+    <meta name="description" content="training,demo,learning">
+    <!-- used for refreshing page after 50 seconds automatically -->
+    <meta http-equiv="refresh" content="50">
+    <title>Taxi Service</title>
+    <link rel="stylesheet icon" href="./images/car.jpg" type="image/x-icon">
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        p{
+            /* font-size: 1.5rem; will take size of html tag as reference*/  
+            /* font-size: 1.5em; will take size of immediate parent footer as reference */
+            font-size: 5px;
+        }
+        footer{
+            font-size: 10px;
+        }
+        /* only child of nav ul will be display inline not all */
+        nav ul>li{
+            display: inline;
+        }
+        a{
+            font-size: 1.5rem;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        a:hover{
+            border-bottom: 2px solid goldenrod;
+        }  
+        
+        .container{
+            display: flex;
+            height: 100px;
+            border: 2px solid gold;
+        }
+
+        .child{
+            font-size: 1.8em;
+            color: blueviolet;
+        }
+
+        /* 
+        If the margin property has four values:
+        margin: 10px 5px 15px 20px;
+        top margin is 10px
+        right margin is 5px
+        bottom margin is 15px
+        left margin is 20px
+
+        If the margin property has three values:
+        margin: 10px 5px 15px;
+        top margin is 10px
+        right and left margins are 5px
+        bottom margin is 15px
+
+        If the margin property has two values:
+        margin: 10px 5px;
+        top and bottom margins are 10px
+        right and left margins are 5px
+
+        If the margin property has one value:
+        margin: 10px;
+        all four margins are 10px
+        */
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="mainHeading">Chennai Taxi Service</h1>
+        <img src="images/menu.png" alt="menu" class="menu-icon">
+        <nav>
+            <ul>
+                <li><a href="#home">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="register.html" target="_blank">Register</a></li>
+                <li><a href="login.html"><button>Login</button></a></li>
+
+                <!-- <button>Logout</button> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="container">
+            <article id="home"></article>
+            <article id="services"></article>
+            <article id="testimonials"></article>
+            <article id="packages"></article>
+            <h2>Our Customers Speak </h2>
+            <div class="container">
+                <p><img src="images/customer.png" alt="" width="50" height="50" class="">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+                </p>
+                <p><img src="images/customer.png" alt="" width="50" height="50">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+                </p>
+                <p><img src="images/customer.png" alt="" width="50" height="50">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+                </p>
+            </div>
+            <h2>Popular Packages</h2>
+                    <table>
+                        <tHead>
+                            <tr>
+                                <th>Package</th>
+                                <th>Fare</th>
+                                <th>Distance</th>
+                                <th>Extra</th>
+                            </tr>
+                        </tHead>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>1 Hrs</td>
+                                <td>Rs 500</td>
+                                <td>10 Kms</td>
+                                <td>Rs. 15 per km</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>2 Hrs</td>
+                                <td>Rs 750</td>
+                                <td>30 Kms</td>
+                                <td>Rs. 12 per km</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>3 Hrs</td>
+                                <td>Rs 1250</td>
+                                <td>50 Kms</td>
+                                <td>Rs. 10 per km</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>10 Hrs</td>
+                                <td>Rs 3500</td>
+                                <td>100 Kms</td>
+                                <td>Rs. 10 per km</td>
+                            </tr>
+                        </tbody>
+                    </table>
+        </section>
+        <aside id="video">
+            <h2>Demo</h2>
+            <video src="videos/demo.mp4" controls autoplay width="1000" height="500"></video>
+            <audio src="audios/demo.mp3" controls></audio>
+        </aside>
+        <footer>
+            <p>Designed by ABC Software Limited © 2025-2026</p>
+            <p><a href="mailto:admin@abc.com">Contact Admin</a></p>
+        </footer>
+    </main>
+    <footer></footer>
+</body>
+</html>

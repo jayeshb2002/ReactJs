@@ -1,0 +1,23 @@
+.outer{
+    width: 40%;
+    height: 100px;
+    /* border: 1px solid blue; */
+}
+
+.inner{
+    width: 20%;
+    height: 50px;
+    border: 1px solid blue;
+}
+
+.menu-icon{
+    width: 10px;
+    height: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+/* pseudo class */
+a:hover{
+    border-bottom: 2px solid goldenrod;
+}
+

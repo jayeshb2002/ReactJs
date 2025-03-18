@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            height: 100px;
+            /* width: 500px; */
+            border: 2px solid gold;
+            justify-content: center;
+        }
+        .box{
+            width: 90px;
+            height: 90px;
+            margin: 5px;
+            border: 1px solid green;
+            background-image: linear-gradient(lightblue,lightgreen);
+        }
+        .box:nth-child(even){
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">one</div>
+        <div class="box">two</div>
+        <div class="box">three</div>
+    </div>
+    
+</body>
+</html>

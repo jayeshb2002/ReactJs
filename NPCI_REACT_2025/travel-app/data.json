@@ -1,0 +1,12 @@
+{
+    "posts": [
+        { "id": "1", "customerName": "Ramesh", "location": "Chennai", "email":"ramesh@gmail.com" },
+        { "id": "2", "customerName": "Vedant", "location": "Latur", "email":"vedant@gmail.com" },
+        { "id": "3", "customerName": "Vinayak", "location": "Solapur", "email":"vinayak@gmail.com" }
+    ],
+    "pages": [
+        { "id":"101","linkRef": "/home", "linkText": "Home" },
+        { "id":"102","linkRef": "/about", "linkText": "About" },
+        { "id":"103","linkRef": "/products", "linkText": "Product" }
+    ]
+  }

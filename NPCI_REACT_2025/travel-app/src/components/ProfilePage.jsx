@@ -10,7 +10,6 @@ const ProfilePage = () => {
       <>
           <TableHead columns={["id", "Name", "avatar", "tagName"]} />
           <TableBody data={profileData} />
-      
       </>
   )
 }

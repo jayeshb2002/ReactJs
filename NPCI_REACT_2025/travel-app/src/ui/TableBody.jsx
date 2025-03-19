@@ -1,17 +1,24 @@
-import React from 'react';
+import React from 'react'
 
-const TableBody = ({ data }) => {
-  return (
-    <tbody>
-      {data.map((row, index) => (
-        <tr key={index}>
-          {Object.keys(row).map((key, idx) => (
-            <td key={idx}>{row[key]}</td> 
-          ))}
-        </tr>
-      ))}
-    </tbody>
-  );
-};
+const TableBody = ({ data, handleDelete,handleEdit }) => {
+    const tableRow = (item, idx) => {
+        return (
+            <tr key={idx}>
+                {
+                    Object.entries(item).map(([key, value]) => {
+                        return <td key={key}>{value}</td>
+                    })
+                }
+                <td><button onClick={()=>handleEdit(item.id)}>Edit</button></td>
+                <td><button onClick={() => handleDelete(item.id)}>Delete</button></td>
+            </tr>
+        )
+    }
+    return (
+        <tbody>
+            {data.map(tableRow)}
+        </tbody>
+    )
+}
 
-export default TableBody;
+export default TableBody

@@ -5,6 +5,7 @@ import Table from '../components/Table';
 import StateDemo from '../components/StateDemo';
 import PaymentDetails from '../components/PaymentDetails';
 import ProfilePage from '../components/ProfilePage';
+import Login from '../components/Login';
 
 const RootLayout = () => {
   let user = { username: 'Jayesh', password: 'abc@123' };
@@ -35,7 +36,7 @@ const RootLayout = () => {
           </main>
       <StateDemo />
       <PaymentDetails />
-      <ProfilePage />
+      {/* <ProfilePage /> */}
     </>
   );
 };

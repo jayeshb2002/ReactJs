@@ -1,15 +1,18 @@
-import React from 'react';
+import React from 'react'
 
 const TableHead = ({ columns }) => {
-  return (
-    <thead>
-      <tr>
-        {columns.map((col, index) => (
-          <th key={index}>{col}</th> 
-        ))}
-      </tr>
-    </thead>
-  );
-};
+    const createContent = (value, idx) => {
+        return <th key={idx}>{value.toUpperCase()}</th>
+    }
+    return (
+        <thead>
+            <tr>
+                {
+                    columns.map(createContent)
+                }
+            </tr>
+        </thead>
+    )
+}
 
-export default TableHead;
+export default TableHead

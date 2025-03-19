@@ -1,22 +1,74 @@
 {
-    "posts": [
-        { "id": "1", "customerName": "Ramesh", "location": "Chennai", "email":"ramesh@gmail.com" },
-        { "id": "2", "customerName": "Vedant", "location": "Latur", "email":"vedant@gmail.com" },
-        { "id": "3", "customerName": "Vinayak", "location": "Solapur", "email":"vinayak@gmail.com" }
-    ],
-    "pages": [
-        { "id":"101","linkRef": "/home", "linkText": "Home" },
-        { "id":"102","linkRef": "/about", "linkText": "About" },
-        { "id":"103","linkRef": "/products", "linkText": "Product" }
-    ],
-    "payments": [
-        { "id":"201","customerName": "Shiv", "Amount": "4500", "Currency":"INR" },
-        { "id":"202","customerName": "Ved", "Amount": "200", "Currency":"USD" },
-        { "id":"203","customerName": "Vin", "Amount": "6000", "Currency":"JPY" }
-    ],
-    "profiles": [
-        {"id":"301","Name":"Jayesh","avatar":"jay.png","tagName":"Food Blogger"},
-        {"id":"302","Name":"Vedant","avatar":"ved.png","tagName":"Investbank Banker"},
-        {"id":"303","Name":"Vinayak","avatar":"vin.png","tagName":"Businessman"}
-    ]
-  }
+  "posts": [
+    {
+      "id": "1",
+      "customerName": "Ramesh",
+      "location": "Chennai",
+      "email": "ramesh@gmail.com"
+    },
+    {
+      "id": "2",
+      "customerName": "Vedant",
+      "location": "Latur",
+      "email": "vedant@gmail.com"
+    },
+    {
+      "id": "3",
+      "customerName": "Vinayak",
+      "location": "Solapur",
+      "email": "vinayak@gmail.com"
+    }
+  ],
+  "pages": [
+    {
+      "id": "101",
+      "linkRef": "/home",
+      "linkText": "Home"
+    },
+    {
+      "id": "102",
+      "linkRef": "/about",
+      "linkText": "About"
+    },
+    {
+      "id": "103",
+      "linkRef": "/products",
+      "linkText": "Product"
+    }
+  ],
+  "payments": [
+    {
+      "id": "201",
+      "customerName": "Shiv",
+      "amount": "4500",
+      "currency": "INR"
+    },
+    {
+      "id": "202",
+      "customerName": "Jayesh",
+      "amount": "500",
+      "currency": "JPY"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "301",
+      "Name": "Jayesh",
+      "avatar": "jay.png",
+      "tagName": "Food Blogger"
+    },
+    {
+      "id": "302",
+      "Name": "Vedant",
+      "avatar": "ved.png",
+      "tagName": "Investbank Banker"
+    },
+    {
+      "id": "303",
+      "Name": "Vinayak",
+      "avatar": "vin.png",
+      "tagName": "Businessman"
+    }
+  ],
+  "users": []
+}

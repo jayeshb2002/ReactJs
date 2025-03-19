@@ -16,12 +16,12 @@ const StateDemo = () => {
     // },[])
 
 
-    // to call it whenever count changes we have to put that count in dependecy array
+    // to call it whenever count changes we have to put that count in dependency array
     // useEffect(() => {
     //     console.log('useEffect called')
     // }, [count]) // it will call useEffect when count changes
     
-    // to call it whenever count changes we have to put that count in dependecy array
+    // to call it whenever count changes we have to put that count in dependency array
     // to use cleanup function 
     useEffect(() => {
         console.log('useEffect called')

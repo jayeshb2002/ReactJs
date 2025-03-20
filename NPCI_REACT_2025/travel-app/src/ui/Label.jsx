@@ -2,7 +2,7 @@ import React from 'react'
 
 const Label = ({ text }) => {
     return (
-        <label style={{ color: 'black' }}>{text}</label>
+        <label style={{ color: 'white' }}>{text}</label>
     )
 }
 

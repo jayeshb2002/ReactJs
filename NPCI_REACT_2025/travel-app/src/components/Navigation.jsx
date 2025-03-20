@@ -17,13 +17,17 @@
 
 import React from 'react';
 import Link from '../ui/Link';
+import { NavLink } from 'react-router-dom';
 const Navigation = ({ linkList }) => {
   const createLink = (value, idx) => {
     return (
-      <Link key={idx} linkref={value.linkRef} linkText={value.linkText}></Link>
+      <NavLink key={idx} to={value.linkRef}>{value.linkText}</NavLink>
     );
   };
-  return <div>{linkList.map(createLink)}</div>;
+  return <div>
+    {linkList.map(createLink)}
+    {/* <NavLink to={'/payments'}>Payments</NavLink> */}
+  </div>;
 };
 
 export default Navigation;
